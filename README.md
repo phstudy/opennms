@@ -7,8 +7,8 @@ This repository contains **Dockerfile** of [OpenNMS](http://www.opennms.org/) fo
 
   1. start a postgres instance
 
-    docker run --name some-postgres -e LC_ALL=C.UTF-8 -d postgres
+    `docker run --name some-postgres -e LC_ALL=C.UTF-8 -d postgres`
 
   2. start a opennms instance and link it to the postgres instance
 
-    docker run --name some-opennms --link some-postgres:postgres -p 8980:8980 -d 'study/opennms'
+    `docker run --name some-opennms --link some-postgres:postgres -p 8980:8980 -d 'study/opennms'`
